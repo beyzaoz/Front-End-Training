@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="/submitted.html" method="get">
+        <!--Text Input 1-->
+        <label for="fname" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Name:</label><br>
+        <input type="text" style="font-size: medium;" id="fname" name="fname" required><br>
+        <!--Text Input 2-->
+        <label for="lname" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Surname:</label><br>
+        <input type="text"style="font-size: medium;"  id="lname" name="lname" required><br>
+        <!--Email-->
+        <label for="Email" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Email</label><br>
+        <input type="email"style="font-size: medium;"  id="Email" name="Email" required><br>
+        <!--Password-->
+        <label for="pwd" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Password:</label> <br>
+        <input type="password" style="font-size: medium;"  id="pwd" name="pwd" required><br>
+
+        <!--Radio Button-->
+        <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Gender: </p>
+        <input type="radio"  id="male" name="male" value="male" required>
+        <label for="male"></label>
+        <input type="radio" id="female" name="female" value="female" required>
+        <label for="female"></label><br>
+
+        <!--Fruits options-->
+        <label for="fruits" style="color: brown; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">What is your favorite fruits?</label><br>
+        <select id="fruit" name="fruits" style="border: 3px solid brown;">
+            <option value="apple">Apple</option>
+            <option value="grape">Grape</option>
+            <option value="watermelon">watermelon</option>
+            <option value="raspberry">Raspberry</option>
+            <option value="banana">Banana</option>
+        </select><br>
+
+        <!--Message Box-->
+        <label for="msg" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Message Box</label><br>
+        <textarea id="message" style="font-size: large;" name="message" rows="4" cols="20"></textarea><br>
+
+        <!--Sent Button-->
+        <input type="submit" value="sent">
+
+
+
+
+
+    </form>
+    
+</body>
+</html>
