@@ -1,0 +1,18 @@
+*{
+    background: #f9fafb;
+}
+
+.slides{
+    transform: translateX(0);
+}
+#s1:checked ~ slide {
+   transform: translateX(0%); 
+}
+
+#s2:checked ~ slide {
+    transform: translateX(100%);
+}
+#s3:checked ~ slide{
+    transform: translateX(100%);
+}
+

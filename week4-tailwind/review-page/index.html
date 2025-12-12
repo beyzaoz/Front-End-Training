@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Play CDN Örneği</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--NAVBAR START-->
+    <div class="flex justify-between items-center h-16 bg-[var(--secondary-color)]">
+        <div class="ml-40 ">
+            <a class="mr-4 border-b-4 border-[var(--primary-color)] pb-3 " href="">Link</a>
+            <a class="mr-4 border-b-4 border-[var(--primary-color)] pb-3 " href="">Link</a>
+            <a class="mr-4 border-b-4 border-[var(--primary-color)] pb-3 " href="">Link</a>
+        </div>
+
+        <div class="ml-20">
+            <i class="fa-solid fa-star text-[var(--primary-color)]"></i>
+        </div>
+
+
+        <div class="flex flex-row gap-8 mr-24">
+            <div class="relative w-64 h-full mx-auto">
+                <div class="w-full border-2 rounded-full mt-2 relative ">
+                    <i class="fa-solid fa-magnifying-glass absolute left-2 top-1/2 -translate-y-1/2 text-gray-500"></i>
+                    <input type="text" placeholder="Search" class=" bg-[var(--secondary-color)] rounded-full ml-8 ">
+                </div>
+
+            </div>
+
+            <div>
+                <button class="px-6 py-2 rounded-full bg-[#7C3AEC] text-white">Log in</button>
+            </div>
+        </div>
+    </div>
+    <!--NAVBAR END-->
+
+
+    <!--1 START-->
+    <div class="grid grid-cols-12 bg-[var(--th-color)]">
+        <div class="col-start-5 col-span-4 flex justify-center items-center pt-24">
+            <div class=" flex flex-col">
+                <h1 class="font-bold text-[60px] text-center">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, impedit!
+                </h1>
+
+                <h4 class="text-[20px] text-center mt-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                    dolorum quas quae repellendus culpa reiciendis aperiam?</h4>
+
+
+                <div class="flex flex-row justify-center items-center gap-10 mt-20 mb-40">
+                    <button class="bg-[var(--primary-color)] text-white h-10 w-24 rounded-md ">Get Started</button>
+                    <button>Learn More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--1 END-->
+
+
+    <!--2 START-->
+
+    <div class="grid grid-cols-12 bg-[var(--secondary-color)] gap-24">
+
+        <div class="col-start-5 col-span-5 text-[40px] font-bold pt-20">
+            <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+        </div>
+
+        <div class="col-start-4 col-span-6 flex justify-between gap-24 rounded-md ">
+            <!--1-->
+            <div class="flex block flex-col text-center bg-white rounded-md shadow-md shadow-gray-300  ">
+                <i class="fa-light fa-quote-left px-10 py-5 text-left"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis vel molestias quisquam quis
+                    pariatur.</p>
+                <i class="px-10 py-5 text-right fa-light fa-quote-left"></i>
+
+                <div class=" relative h-7 w-full [linear-gradient(to_bottom,white_50%,var(--primary-color)_50%)]">
+                    <img class="rounded-full object-cover h-16 w-16 mx-auto block "
+                        src="https://picsum.photos/id/1/200/200" alt="">
+                </div>
+
+                <section
+                    class="bg-[var(--primary-color)] text-white w-full h-[120px] flex flex-col items-center justify-center rounded-b-md shadow-md shadow-gray-300 ">
+                    <h4><strong>Distinctio Animi</strong></h4>
+                    <h4>Aliquam illum</h4>
+                </section>
+            </div>
+            <!--2-->
+            <div class="flex block flex-col text-center bg-white rounded-md shadow-md shadow-gray-300 ">
+                <i class="px-10 py-5 text-left fa-light fa-quote-left"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis vel molestias quisquam quis
+                    pariatur.</p>
+                <i class="px-10 py-5 text-right fa-light fa-quote-left"></i>
+
+                <div class=" relative h-7 w-full [linear-gradient(to_bottom,white_50%,var(--primary-color)_50%)]">
+                    <img class="rounded-full object-cover h-16 w-16 mx-auto block "
+                        src="https://picsum.photos/id/2/200/200" alt="">
+                </div>
+
+                <section
+                    class="bg-[var(--primary-color)] text-white w-full h-[120px] flex flex-col items-center justify-center rounded-b-md shadow-md shadow-gray-300">
+                    <h4><strong>Distinctio Animi</strong></h4>
+                    <h4>Aliquam illum</h4>
+                </section>
+            </div>
+
+
+        </div>
+
+        <div class="col-start-4 col-span-6 flex justify-between gap-24 mb-20 ">
+            <!--3-->
+            <div class="flex block flex-col text-center bg-white rounded-md shadow-md shadow-gray-300  ">
+                <i class="px-10 py-5 text-left fa-light fa-quote-left"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis vel molestias quisquam quis
+                    pariatur.</p>
+                <i class="px-10 py-5 text-right fa-light fa-quote-left"></i>
+
+                <div class=" relative h-7 w-full [linear-gradient(to_bottom,white_50%,var(--primary-color)_50%)] ">
+                    <img class="rounded-full object-cover h-16 w-16 mx-auto block "
+                        src="https://picsum.photos/id/3/200/200" alt="">
+                </div>
+
+                <section
+                    class="bg-[var(--primary-color)] text-white w-full h-[120px] flex flex-col items-center justify-center rounded-b-md shadow-md shadow-gray-300 ">
+                    <h4><strong>Distinctio Animi</strong></h4>
+                    <h4>Aliquam illum</h4>
+                </section>
+            </div>
+            <!--4-->
+            <div class="flex block flex-col text-center bg-white rounded-md shadow-md shadow-gray-300 ">
+                <i class="px-10 py-5 text-left fa-light fa-quote-left"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis vel molestias quisquam quis
+                    pariatur.</p>
+                <i class="px-10 py-5 text-right fa-light fa-quote-left"></i>
+
+                <div class=" relative h-7 w-full [linear-gradient(to_bottom,white_50%,var(--primary-color)_50%)]">
+                    <img class="rounded-full object-cover h-16 w-16 mx-auto block "
+                        src="https://picsum.photos/id/4/200/200" alt="">
+                </div>
+
+                <section
+                    class="bg-[var(--primary-color)] text-white w-full h-[120px] flex flex-col items-center justify-center rounded-b-md shadow-md shadow-gray-300 ">
+                    <h4><strong>Distinctio Animi</strong></h4>
+                    <h4>Aliquam illum</h4>
+                </section>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <!--2 END-->
+
+    <!--3 START-->
+    <div class=" grid grid-cols-12 h-[700px] w-full bg-[var(--th-color)] ">
+        <div
+            class="col-start-5 col-span-5 flex flex-col gap-3 mt-10 bg-white h-[550px] w-[650px] border-1 rounded-lg shadow-sm shadow-gray">
+
+            <div class="flex flex-col m-10 gap-3 h-auto">
+                <h1 class="text-[40px] max-w-md ml-[180px] mt-2"><strong>Contact Us</strong></h1>
+
+                <div class="w-full max-w-md mx-auto mt-5">
+                    <h4>Name</h4>
+                    <textarea
+                        class="w-full p-3 resize-none border border-gray-300 rounded-lg bg-[var(--secondary-color)]"
+                        rows="1" id="name" placeholder="Your name"></textarea>
+
+                </div>
+                <div class="w-full max-w-md mx-auto mt-2">
+                    <h4>Email</h4>
+                    <textarea
+                        class="w-full p-3 resize-none border border-gray-300 rounded-lg bg-[var(--secondary-color)]"
+                        rows="1" id="name" placeholder="Your email"></textarea>
+
+                </div>
+                <div class="w-full max-w-md mx-auto mt-2">
+                    <h4 class="">Message</h4>
+                    <textarea id="messageBox" rows="1" placeholder="Mesajınızı yazın..."
+                        class="w-full  p-3 border border-gray-300 rounded-lg bg-[var(--secondary-color)]"></textarea>
+                </div>
+
+
+                <Button class="bg-[var(--primary-color)] text-white h-10 mt-2 rounded-md">Send</Button>
+            </div>
+
+
+        </div>
+    </div>
+    <!--3 END-->
+
+    <!--FOOTER START-->
+    <footer class="h-[60px] w-full bg-[var(--th-color)] flex items-center justify-center">
+        <div class="grid grid-cols-12 w-full">
+            <div class="col-start-3 col-span-8 flex items-center justify-between w-full mb-10">
+                <div class="flex flex-row gap-8">
+                    <h4>Shop</h4>
+                    <h4>About</h4>
+                    <h4>Blog</h4>
+                    <h4>Pricing</h4>
+                    <h4>Contact</h4>
+                </div>
+
+                <div class="flex flex-row gap-8">
+                    <i
+                        class="fa-brands fa-instagram h-10 w-10 border-2 rounded-full flex justify-center items-center bg-[var(--primary-color)] text-white"></i>
+                    <i
+                        class="fa-brands fa-pinterest h-10 w-10 border-2 rounded-full flex justify-center items-center bg-[var(--primary-color)] text-white"></i>
+                    <i
+                        class="fa-brands fa-twitter h-10 w-10 border-2 rounded-full flex justify-center items-center bg-[var(--primary-color)] text-white"></i>
+                    <i
+                        class="fa-brands fa-facebook h-10 w-10 border-2 rounded-full flex justify-center items-center bg-[var(--primary-color)] text-white"></i>
+                    <i
+                        class="fa-brands fa-google h-10 w-10 border-2 rounded-full flex justify-center items-center bg-[var(--primary-color)] text-white"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--FOOTER END-->
+
+</body>
+
+</html>
