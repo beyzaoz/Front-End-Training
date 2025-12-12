@@ -14,8 +14,8 @@
 <body>
 
     <!--NAVBAR START-->
-    <div class="flex justify-between items-center h-16 bg-[var(--secondary-color)]">
-        <div class="ml-40 ">
+    <div class="flex justify-between items-center h-16 bg-[var(--secondary-color)] px-4 sm:px-8 md:px-20">
+        <div class="flex space-x-4 ">
             <a class="mr-4 border-b-4 border-[var(--primary-color)] pb-3 " href="">Link</a>
             <a class="mr-4 border-b-4 border-[var(--primary-color)] pb-3 " href="">Link</a>
             <a class="mr-4 border-b-4 border-[var(--primary-color)] pb-3 " href="">Link</a>
@@ -26,9 +26,9 @@
         </div>
 
 
-        <div class="flex flex-row gap-8 mr-24">
-            <div class="relative w-64 h-full mx-auto">
-                <div class="w-full border-2 rounded-full mt-2 relative ">
+        <div class="flex flex-row gap-4 md:gap-8">
+            <div class="relative md:w-64 h-full mx-auto">
+                <div class="w-full border-2 rounded-full mt-2 relative hidden md:block ">
                     <i class="fa-solid fa-magnifying-glass absolute left-2 top-1/2 -translate-y-1/2 text-gray-500"></i>
                     <input type="text" placeholder="Search" class=" bg-[var(--secondary-color)] rounded-full ml-8 ">
                 </div>
@@ -44,8 +44,8 @@
 
 
     <!--1 START-->
-    <div class="grid grid-cols-12 bg-[var(--th-color)]">
-        <div class="col-start-5 col-span-4 flex justify-center items-center pt-24">
+    <div class="grid grid-cols-1 md:grid-cols-12 bg-[var(--th-color)]">
+        <div class="col-span-1 md:col-start-5 md:col-span-4 flex justify-center items-center pt-24">
             <div class=" flex flex-col">
                 <h1 class="font-bold text-[60px] text-center">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, impedit!
@@ -67,13 +67,13 @@
 
     <!--2 START-->
 
-    <div class="grid grid-cols-12 bg-[var(--secondary-color)] gap-24">
+    <div class="grid grid-cols-1 md:grid-cols-12 bg-[var(--secondary-color)] gap-24">
 
-        <div class="col-start-5 col-span-5 text-[40px] font-bold pt-20">
+        <div class=" col-span-1 md:col-start-5 md:col-span-5 text-[40px] font-bold pt-20">
             <h1>Lorem ipsum dolor sit amet consectetur.</h1>
         </div>
 
-        <div class="col-start-4 col-span-6 flex justify-between gap-24 rounded-md ">
+        <div class=" col-span-1 md:col-start-4 md:col-span-6 flex flex-col md:flex-row justify-between gap-24 rounded-md ">
             <!--1-->
             <div class="flex block flex-col text-center bg-white rounded-md shadow-md shadow-gray-300  ">
                 <i class="fa-light fa-quote-left px-10 py-5 text-left"></i>
@@ -114,7 +114,7 @@
 
         </div>
 
-        <div class="col-start-4 col-span-6 flex justify-between gap-24 mb-20 ">
+        <div class=" col-span-1 md:col-start-4 md:col-span-6  flex flex-col md:flex-row  justify-between gap-24 mb-20 ">
             <!--3-->
             <div class="flex block flex-col text-center bg-white rounded-md shadow-md shadow-gray-300  ">
                 <i class="px-10 py-5 text-left fa-light fa-quote-left"></i>
@@ -161,12 +161,12 @@
     <!--2 END-->
 
     <!--3 START-->
-    <div class=" grid grid-cols-12 h-[700px] w-full bg-[var(--th-color)] ">
+    <div class=" grid grid-cols-1 md:grid-cols-12 h-[700px] w-full bg-[var(--th-color)] ">
         <div
-            class="col-start-5 col-span-5 flex flex-col gap-3 mt-10 bg-white h-[550px] w-[650px] border-1 rounded-lg shadow-sm shadow-gray">
+            class=" col-start-1 md:col-start-5 md:col-span-5 flex flex-col gap-3 mt-10 bg-white h-[550px] w-[70%] border-1 rounded-lg shadow-sm shadow-gray">
 
-            <div class="flex flex-col m-10 gap-3 h-auto">
-                <h1 class="text-[40px] max-w-md ml-[180px] mt-2"><strong>Contact Us</strong></h1>
+            <div class="flex flex-col md:m-10 gap-3 h-auto">
+                <h1 class="text-[40px] max-w-md text-center md:ml-[50px] mt-2"><strong>Contact Us</strong></h1>
 
                 <div class="w-full max-w-md mx-auto mt-5">
                     <h4>Name</h4>
@@ -184,7 +184,7 @@
                 </div>
                 <div class="w-full max-w-md mx-auto mt-2">
                     <h4 class="">Message</h4>
-                    <textarea id="messageBox" rows="1" placeholder="Mesajınızı yazın..."
+                    <textarea id="messageBox" rows="1" placeholder="Message..."
                         class="w-full  p-3 border border-gray-300 rounded-lg bg-[var(--secondary-color)]"></textarea>
                 </div>
 
@@ -198,10 +198,10 @@
     <!--3 END-->
 
     <!--FOOTER START-->
-    <footer class="h-[60px] w-full bg-[var(--th-color)] flex items-center justify-center">
+    <footer class="md:h-[60px] h-[150px]  w-full bg-[var(--th-color)] flex items-center justify-center">
         <div class="grid grid-cols-12 w-full">
             <div class="col-start-3 col-span-8 flex items-center justify-between w-full mb-10">
-                <div class="flex flex-row gap-8">
+                <div class="flex md:flex-row flex-col gap-2 md:gap-8">
                     <h4>Shop</h4>
                     <h4>About</h4>
                     <h4>Blog</h4>
@@ -209,7 +209,7 @@
                     <h4>Contact</h4>
                 </div>
 
-                <div class="flex flex-row gap-8">
+                <div class="flex flex-row gap-2 md:gap-8">
                     <i
                         class="fa-brands fa-instagram h-10 w-10 border-2 rounded-full flex justify-center items-center bg-[var(--primary-color)] text-white"></i>
                     <i
