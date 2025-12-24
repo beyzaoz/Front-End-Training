@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            font-size: 20px;
+        }
+
+        body {
+            background-image: url(img/drum.png);
+            background-size: cover;
+            opacity: 4;
+        }
+
+        #button:active {
+            background-color: aquamarine;
+            transform: scale(1.25);
+
+        }
+
+        @media screen and (max-width: 650px) {
+            #container1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container1" class="grid grid-cols-12 mt-[10%] gap-10">
+        <div id="container2" class="col-start-4 col-span-6 flex justify-center items-center text-xl gap-10">
+            
+            <button id="button" class="border border-5 border-black bg-blue-600 text-white rounded-lg p-4">Sound 1
+                <audio id="audio" src="sounds/boom.wav" preload="auto"></audio>
+            </button>
+
+            <button id="button1" class="border border-5 border-black bg-blue-600 text-white rounded-lg p-4">Sound 2
+                <audio id="audio1" src="sounds/clap.wav" preload="auto"></audio>
+            </button>
+
+
+            <button id="button2" class="border border-5 border-black bg-blue-600 text-white rounded-lg p-4">Sound 3
+                <audio id="audio2" src="sounds/hihat.wav" preload="auto"></audio>
+            </button>
+
+        </div>
+
+        
+        <div class="col-start-4 col-span-6 flex justify-center items-center text-xl gap-10">
+            
+            <button id="button3" class="border border-5 border-black bg-blue-600 text-white rounded-lg p-4">Sound 4
+                <audio id="audio3" src="sounds/kick.wav" preload="auto"></audio>
+            </button>
+
+            <button id="button4" class="border border-5 border-black bg-blue-600 text-white rounded-lg p-4">Sound 5
+                <audio id="audio4" src="sounds/openhat.wav" preload="auto"></audio>
+            </button>
+
+            <button id="button5" class="border border-5 border-black bg-blue-600 text-white rounded-lg p-4">Sound 6
+                <audio id="audio5" src="sounds/ride.wav" preload="auto"></audio>
+            </button>
+
+        </div>
+        <div class="col-start-4 col-span-6 flex justify-center items-center text-xl gap-10">
+            <button id="button6" class="border border-5 border-black bg-blue-600 text-white rounded-lg p-4">Sound 7
+                <audio id="audio6" src="sounds/snare.wav" preload="auto"></audio>
+            </button>
+
+            <button id="button7" class="border border-5 border-black bg-blue-600 text-white rounded-lg p-4">Sound 8
+                <audio id="audio7" src="sounds/tink.wav" preload="auto"></audio>
+            </button>
+
+            <button id="button8" class="border border-5 border-black bg-blue-600 text-white rounded-lg p-4">Sound 9
+                <audio id="audio8" src="sounds/tom.wav" preload="auto"></audio>
+            </button>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
