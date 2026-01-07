@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body>
+
+    <section class="fullPage">
+        <!--1. PAGE START-->
+        <!--NAVBAR START-->
+
+        <div id="navbar" class="navbar grid grid-cols-12">
+            <div id="navbarContainer" class="flex justify-between col-start-3 col-span-6 relative">
+
+                <div class="flex-shrink-0">
+                    <img src="img/logo.png" alt="logo">
+                </div>
+
+                <div class="hamburger font-bold text-4xl text-white mt-8 mx-auto" id="hamburger">☰</div>
+
+                <div class="navLinks hidden sm:flex gap-5 justify-center items-center font-bold text-white text-xl">
+                    <button class="btnNav"><a href="#home">Home</a></button>
+                    <button class="btnNav"><a href="#classes">Classes</a></button>
+                    <button class="btnNav"><a href="#trainers">Trainer</a></button>
+                    <button class="btnNav"><a href="#review">Review</a></button>
+                    <button class="btnNav"><a href="#contact">Contact</a></button>
+                    <button class="btnNav bg-[#F39C12] p-2 font-bold rounded-xl">JOIN US</button>
+                </div>
+
+            </div>
+        </div>
+        <!--NAVBAR END-->
+
+        <!--First page text area start-->
+
+        <section id="home" class="md:grid md:grid-cols-12 pt-[6rem] pb-[4rem]">
+            <div class=" flex md:col-start-3 md:col-span-8">
+                <div class="">
+                    <p class="bg-[#355592] inline-block text-white p-2 rounded-l font-bold text-2xl">POWERFULL</p>
+                    <div>
+                        <h3 class="text-white font-bold text-[6rem] block md:block  inline">GROUP</h3>
+                        <h3 class="text-white font-bold text-[6rem] block md:block inline">PRACTICE</h3>
+                        <h3 class="text-white font-bold text-[6rem]  md:block  sm:inline">WITH TRAINER</h3>
+                    </div>
+
+                    <h4 id="explanation" class="text-white font-bold text-[2.1rem] bg-black bg-opacity-55">Lorem ipsum
+                        dolor, sit amet
+                        consectetur adipisicing
+                        elit.
+                        Laudantium sapiente facilis maxime dicta animi, doloremque dolorum, officiis qui molestias nisi
+                        nam
+                        explicabo facere inventore omnis minus ex nobis fugit eum.</h4>
+
+                    <button
+                        class="btn1 bg-[#355592] p-3 rounded-xl text-white text-xl mr-12 mt-2 px-12 md:font-extrabold">Sign
+                        Up</button>
+                    <button id="details"
+                        class="btn1 border-4 border-black p-3 text-white text-xl rounded-xl px-12 md:font-extrabold bg-black bg-opacity-50 ">Details</button>
+
+                </div>
+            </div>
+        </section>
+        <!--First page text area end-->
+
+        <!--First page card area start-->
+        <section class="cardArea grid md:grid-cols-12">
+
+            <div class="flex flex-col sm:flex-col md:flex-row col-start-3 col-span-8 md:gap-10">
+                <div class="card">
+                    <h3 class="firstText">325</h3>
+                    <h3 class="secondText">Course</h3>
+                </div>
+                <div class="card">
+                    <h3 class="firstText">405</h3>
+                    <h3 class="secondText">Work Out</h3>
+                </div>
+                <div class="card">
+                    <h3 class="firstText">305</h3>
+                    <h3 class="secondText">Working Hour</h3>
+                </div>
+                <div class="card">
+                    <h3 class="firstText">705</h3>
+                    <h3 class="secondText">Happy Client</h3>
+                </div>
+            </div>
+
+
+        </section>
+        <!--First page card area end-->
+        <!--1. PAGE END-->
+
+        <!--2. PAGE START-->
+
+        <!--Second page card area start-->
+        <section id="classes" class="secondPage grid grid-cols-12">
+            <div class="flex col-start-2 col-span-10  md:col-start-3 md:col-span-8 flex-col items-center ">
+
+                <div class="flex flex-row">
+                    <div class="items-center justify-center min-h-[20vh] w-full text-center p-12 ">
+                        <h1 class=" text-3xl md:text-5xl font-bold p-9 text-[#355592] ">OUR CLASSES</h1>
+
+                        <div class=" h-2 bg-orange-500 mx-auto items-center w-20 rounded-l "></div>
+
+                        <h4 class="md:max-w-xl text-gray-700 pt-8 md:m-12 text-2xl font-bold md:font-medium">
+                            Lorem ipsum is not simply random text. It has roots in a piece of classical at
+                            Hampten-Sydney
+                            College.
+                        </h4>
+                    </div>
+                </div>
+
+
+                <div class="visibleCard">
+                    <!--Buttons are connect radio with "card1" id and for needs to be same.  -->
+                    <!--Work with visibility on the cards: needs to work with radio.-->
+
+                    <input type="radio" name="card" id="card1" class="hidden" checked>
+                    <input type="radio" name="card" id="card2" class="hidden">
+                    <input type="radio" name="card" id="card3" class="hidden">
+                    <input type="radio" name="card" id="card4" class="hidden">
+
+                    <!-- Buttons -->
+                    <div class="buttons">
+                        <label for="card1">Yoga</label>
+                        <label for="card2">Group</label>
+                        <label for="card3">Solo</label>
+                        <label for="card4">Stretching</label>
+                    </div>
+
+
+                    <div class="cards">
+                        <div class="card c1">
+                            <div class="insideCard flex flex-row items-center justify-between">
+                                <div class="my-10">
+                                    <h1>Why are your yoga?</h1>
+                                    <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et a exercitationem
+                                        assumenda,
+                                        iusto culpa sunt cupiditate sapiente. Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Voluptates aspernatur commodi tempore officiis facere sunt,
+                                        impedit animi ipsum porro odio.</h4>
+                                    <h1>When comes Yoga Your Time.</h1>
+                                    <h4>Saturday-Sunday: 8:00am-10:00am</h4>
+                                    <h4>Monday-Tuesday: 10:00am-12:00pm</h4>
+                                    <h4>Wednesday-Friday: 3:00pm- 6:00pm</h4>
+                                </div>
+
+                                <img src="img/yoga.jpg" alt="yoga">
+                            </div>
+                        </div>
+                        <div class="card c2">
+                            <div class="insideCard flex flex-row">
+                                <div class="my-10">
+                                    <h1>Why choose Group Gym Work?</h1>
+                                    <h4>Training in a group increases motivation, boosts energy, and helps you push your
+                                        limits
+                                        with
+                                        professional guidance. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Dolores nobis perspiciatis, deserunt totam sequi mollitia aliquam iste
+                                        voluptatibus asperiores id.</h4>
+                                    <h1>Group Gym Schedule</h1>
+                                    <h4>Monday-Wednesday-Friday: 6:00pm - 7:30pm</h4>
+                                    <h4>Tuesday-Thursday: 5:00pm - 6:30pm</h4>
+                                    <h4>Saturday: 10:00am - 12:00pm</h4>
+                                </div>
+
+                                <img src="img/group.webp" alt="yoga">
+                            </div>
+
+                        </div>
+                        <div class="card c3">
+
+                            <div class=" insideCard flex flex-row">
+                                <div class="my-10">
+                                    <h1>Why Solo Workout?</h1>
+                                    <h4>Solo workouts allow you to focus on your personal goals, move at your own pace,
+                                        and
+                                        build
+                                        a
+                                        strong mind-body connection. Lorem ipsum dolor sit, amet consectetur adipisicing
+                                        elit. Labore illum dolorum similique dolore impedit debitis unde eaque
+                                        doloremque numquam cum.</h4>
+                                    <h1>Solo Workout Time</h1>
+                                    <h4>Monday-Friday: 7:00am - 9:00am</h4>
+                                    <h4>Monday-Friday: 1:00pm - 3:00pm</h4>
+                                    <h4>Sunday: 9:00am - 11:00am</h4>
+                                </div>
+                                <img src="img/solo.jpg" alt="yoga">
+                            </div>
+
+
+                        </div>
+                        <div class="card c4">
+                            <div class="insideCard flex flex-row">
+                                <div class="my-10">
+                                    <h1>Why Stretching Matters?</h1>
+                                    <h4>Stretching improves flexibility, reduces muscle tension, and supports recovery
+                                        after
+                                        intense
+                                        workouts. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum,
+                                        officia. Tenetur nisi rem nihil officia, dolorem adipisci deleniti nostrum
+                                        laboriosam.</h4>
+                                    <h1>Stretching Sessions</h1>
+                                    <h4>Monday-Tuesday: 8:00am - 9:00am</h4>
+                                    <h4>Thursday-Friday: 4:00pm - 5:00pm</h4>
+                                    <h4>Saturday-Sunday: 11:00am - 12:00pm</h4>
+                                </div>
+                                <img src="img/stret.webp" alt="yoga">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!--Second page card area end-->
+        <!--2. PAGE END-->
+
+        <!--3. PAGE START-->
+        <!--BMI Calculation start-->
+
+        <section class="thirdPage grid grid-cols-12">
+            <div id="ibmCalc" class="flex col-start-2 col-span-9 md:col-start-3 md:col-span-8 justify-between gap">
+                <div class=" sm:w-[50vh]">
+                    <h1 class="md:text-6xl text-[#355592] font-bold">BMI Calculator</h1>
+
+                    <p class="text-[#4E4E4E] text-2xl font-bold mt-10 ">Contrary to popular belief, Lorem Ipsum is not
+                        simpy random text. It has roots in a piece of
+                        lassical Latin literature from 45 BC, making it over 2000 years old.</p>
+
+                    <p class="text-[#4E4E4E] text-2xl font-bold mt-10 ">Contrary to popular belief, Lorem ipdum is not
+                        simply random text. It has roots in a piece of
+                        classical Latin literature from 45 BC, making it over 2000 years old.</p>
+
+                    <div id="inputBtn" class=" flex flex-col md:flex-row gap-2 md:gap-5 mt-10 md:mt-20 ">
+                        <div id="inputBtn1">
+                            <input id="heightSize"
+                                class=" text-[#4E4E4E] text-l font-bold  border-[0.1rem] border-black rounded-l shadow-2xl"
+                                type="text" placeholder="Your Height">
+                            <p>cm</p>
+                        </div>
+                        <div id="inputBtn1">
+                            <input id="kilogram"
+                                class="text-[#4E4E4E] text-l font-bold  border-[0.1rem] border-black rounded-l shadow-2xl"
+                                type="text" placeholder="Your Weight">
+                            <p>kg</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id=" calculator">
+                    <div class=" result flex flex-col justify-center items-center">
+                        <h4 id="resultNumber">21.79</h4>
+                        <h4 id="resultReview">Normal</h4>
+                        <h4 class="md:none flex">Your BMI</h4>
+                    </div>
+                    <div style="position: relative; display: inline-block; width: 100%;">
+                        <img id="bmiPicture" class="block w-full" src="img/bmi-index.jpg" alt="bmi-index">
+                        <div id="triangle" class="triangle"></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!--BMI Calculation end-->
+        <!--3. PAGE END-->
+
+
+        <!--4.PAGE START- Our Best Tariners-->
+        <section id="trainers" class="pageFourth">
+            <div>
+
+                <h1>OUR BEST TRAINERS</h1>
+                <div class="h-2 bg-orange-500 mx-auto mt-2 items-center w-20 rounded-l "></div>
+                <div class="grid grid-cols-12">
+                    <div class="flex col-start-3 col-span-8 text-center md:col-start-4 md:col-span-6">
+                        <p class="flex justify-center items-center text-center">Lorem Ipsum is not simply random text.
+                            It has roots in a piece of classical at Hampden-Sydney College.</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-12">
+                    <div id="trainerImg" class="flex col-start-2 col-span-10 md:col-start-3 md:col-span-8">
+                        <div class="trainer-card">
+                            <img src="img/trainer1.jpg" alt="trainer1">
+                        </div>
+                        <div class="trainer-card">
+                            <img src="img/trainer2.jpg" alt="trainer2">
+                        </div>
+                        <div class="trainer-card">
+                            <img src="img/trainer3.jpg" alt="trainer3">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <!--4.PAGE END-->
+
+        <!--5.PAGE END PURCHASE-->
+
+        <section class="fifthPage">
+            <div>
+                <h1>PURCHASE FROM US</h1>
+                <div class="h-2 bg-orange-500 mx-auto m-5 items-center w-20 rounded-l "></div>
+                <div class="grid md:grid-cols-12">
+                    <div class="flex col-start-4 col-span-6">
+                        <p class="flex justify-center items-center text-center">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Ratione possimus dicta, quidem ducimus vitae explicabo a! Earum vitae fuga
+                            reiciendis ipsa architecto aliquam, perspiciatis minus dolore odio eaque ullam quidem?</p>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-12">
+                    <div class="extCard flex sm:col-start-3 sm:col-span-8 sm:justify-between mt-10">
+                        <div id="card">
+                            <img src="img/purchase1.jpg" alt="">
+                            <h2 class="text-black font-bold text-4xl text-center">Kettlebell / 5kg</h2>
+
+                            <div class="flex flex-row items-center justify-center">
+                                <h4 class=" sale text-black font-bold text-xl mt-2">$89.99 </h4>
+                                <h4 class="text-black font-bold text-xl mt-2">/$59.99</h4>
+                            </div>
+                            <div class="flex flex-row items-center gap-[6rem] mt-3">
+                                <i class="fa-solid fa-cart-shopping ml-4"></i>
+                                <h4 class="text-black font-bold text-xl pb-5">Add To Cart</h4>
+                            </div>
+
+                        </div>
+
+                        <div id="card">
+                            <img src="img/purchase2.jpg" alt="">
+                            <h2 class="text-black font-bold text-4xl text-center">Treadmill</h2>
+
+                            <div class="flex flex-row items-center justify-center">
+                                <h4 class=" sale text-black font-bold text-xl mt-2">$899.99 </h4>
+                                <h4 class="text-black font-bold text-xl mt-2">/$599.99</h4>
+                            </div>
+                            <div class="flex flex-row items-center gap-[6rem] mt-3">
+                                <i class="fa-solid fa-cart-shopping ml-4"></i>
+                                <h4 class="text-black font-bold text-xl">Add To Cart</h4>
+                            </div>
+
+                        </div>
+
+
+
+                        <div id="card">
+                            <img src="img/purchase3.jpg" alt="">
+                            <h2 class="text-black font-bold text-3xl text-center">Adjustable Dumbbell</h2>
+
+                            <div class="flex flex-row items-center justify-center">
+                                <h4 class=" sale text-black font-bold text-xl mt-2">$89.99 </h4>
+                                <h4 class="text-black font-bold text-xl mt-2">/$59.99</h4>
+                            </div>
+                            <div class="flex flex-row items-center gap-[6rem] mt-3">
+                                <i class="fa-solid fa-cart-shopping ml-4"></i>
+                                <h4 class="text-black font-bold text-xl">Add To Cart</h4>
+                            </div>
+
+                        </div>
+
+
+
+                        <div id="card">
+                            <img src="img/purchase4.jpg" alt="">
+                            <h2 class="text-black font-bold text-4xl text-center">Kettlebell / 3kg</h2>
+
+                            <div class="flex flex-row items-center justify-center">
+                                <h4 class=" sale text-black font-bold text-xl mt-2">$89.99 </h4>
+                                <h4 class="text-black font-bold text-xl mt-2">/$59.99</h4>
+                            </div>
+                            <div class="flex flex-row items-center gap-[6rem] mt-3">
+                                <i class="fa-solid fa-cart-shopping ml-4"></i>
+                                <h4 class="text-black font-bold text-xl">Add To Cart</h4>
+                            </div>
+
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--5.PAGE END REVIEW-->
+
+        <!--6.PAGE END-->
+
+        <section id="review" class="sixthPage grid grid-cols-12 pt-[6rem]">
+            <div class="col-start-2 col-span-10 md:col-start-3 md:col-span-8 flex flex-col items-center">
+
+                <h1 class="text-5xl font-bold p-9 text-[#355592] text-center">
+                    REVIEW CLIENT
+                </h1>
+
+                <div class="h-2 bg-orange-500 w-20 rounded mx-auto"></div>
+
+                <p id="underText" class="max-w-4xl text-gray-700 text-2xl font-medium text-center py-12">
+                    Lorem ipsum is not simply random text. It has roots in a piece of classical at
+                    Hampten-Sydney College.
+                </p>
+
+                <div class="reviewCard flex justify-between w-full gap-12">
+
+                    <!-- CARD 1 -->
+                    <section class="reviewItem">
+                        <div class="rCard flex items-center gap-4">
+                            <img src="img/client1.jpg" class="w-16 h-16 rounded-full" alt="">
+
+                            <div>
+                                <p class="font-medium">Diet Expert</p>
+                                <p class="font-light text-gray-500">CFO</p>
+                            </div>
+                        </div>
+
+                        <div class="reviewText">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ea voluptate illum
+                            quidem impedit, quaerat odio neque quos ut atque!
+                        </div>
+                    </section>
+
+                    <!-- CARD 2 -->
+                    <section class="reviewItem">
+                        <div class="rCard flex items-center gap-4">
+                            <img src="img/client2.jpg" class="w-16 h-16 rounded-full" alt="">
+
+                            <div>
+                                <p class="font-medium">Cardio Trainer</p>
+                                <p class="font-light text-gray-500">CEO</p>
+                            </div>
+                        </div>
+
+                        <div class="reviewText">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ab delectus! Tempore, error.
+                            Placeat voluptate mollitia inventore commodi at odio dolores recusandae perferendis magnam
+                            ullam.
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </section>
+
+        <!--6.PAGE END-->
+
+        <!--7.PAGE START  CONTACT PART-->
+        <section id="contact" class="seventhPage grid grid-cols-12 pb-5">
+
+            <!-- BAŞLIK -->
+            <div id="titlePart" class="col-start-3 col-span-8 flex flex-col items-center mb-6">
+                <h1 class="text-5xl font-bold mt-4 mb-4 text-[#355592] text-center">
+                    CONTACT US
+                </h1>
+
+                <div class="h-2 bg-orange-500 w-20 rounded mx-auto"></div>
+
+                <p class="max-w-4xl text-gray-700 text-2xl font-medium text-center mt-2">
+                    Lorem ipsum is not simply random text. It has roots in a piece of classical at
+                    Hampten-Sydney College.
+                </p>
+            </div>
+
+            <!-- İÇERİK -->
+            <div id="infoPart" class="col-start-3 col-span-8 flex flex-row items-start justify-between items-center">
+                <div>
+                    <div id="contactInfo" class="flex gap-7 mb-8">
+                        <div>
+                            <h1 class="text-[#4E4E4E] font-medium text-3xl">Mobile Number</h1>
+                            <h2 class="text-[#4E4E4E] font-medium text-xl">+135 773 321 4442</h2>
+                        </div>
+
+                        <div>
+                            <h1 class="font-medium text-3xl text-[#4E4E4E]">Email Address</h1>
+                            <h2 class="text-[#4E4E4E] font-medium text-xl font-medium">demo@demo.com</h2>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-4">
+                        <h1 class="font-bold text-3xl text-[#4E4E4E]">
+                            Make An Appointment
+                        </h1>
+
+                        <input id="text" type="text" placeholder="Your Name" style="background-color: #F1F8FF;">
+                        <input id="text" type="email" placeholder="Your Email" style="background-color: #F1F8FF;">
+                        <textarea id="message" type="text" placeholder="Your Message"
+                            style="background-color: #F1F8FF;"></textarea>
+                    </div>
+                </div>
+
+                <div id="map" class="mapContainer">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6924.587922106326!2d-95.40308405139139!3d29.79805070019431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b89ff43d5ab7%3A0xbeaa5119beac7cc1!2sHouston%20Heights%2C%20Houston%2C%20TX%2077008!5e0!3m2!1sen!2sus!4v1767394731341!5m2!1sen!2sus"
+                        width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <footer class="grid md:grid-cols-12 bg-[#355592]">
+            <section class="md:col-start-3 md:col-span-8 flex flex-col">
+                <div>
+                    <img class="m-0" src="img/logo.png" alt="logo">
+                </div>
+
+                <h4 class="text-white text-xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam sit harum
+                    voluptas, voluptatibus
+                    minus quos sed veniam, deleniti officiis, minima praesentium est vitae distinctio. Magni
+                    reprehenderit praesentium suscipit quisquam repellat.</h4>
+
+                <div class="grid md:grid-cols-12 pt-10">
+                    <div id="ftrInfo" class=" md:col-start-4 md:col-span-6 flex flex-row md:justify-between">
+                        <div class="flex flex-col text-white gap-4 font-medium">
+                            <h1 class="text-3xl">Information</h1>
+                            <a href="">About Us</a>
+                            <a href="">Classes</a>
+                            <a href="">Blog</a>
+                            <a href="">Contact Us</a>
+                        </div>
+
+                        <div class="flex flex-col text-white gap-4 font-medium">
+                            <h1 class="text-3xl">Helpful Links</h1>
+                            <a href="">Services</a>
+                            <a href="">Supports</a>
+                            <a href="">Terms & Condition</a>
+                            <a href="">Privacy Policy</a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </footer>
+
+        <!--7.PAGE END-->
+
+
+
+    </section>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

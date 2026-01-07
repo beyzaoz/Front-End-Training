@@ -1,0 +1,772 @@
+* {}
+
+body {}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+    /* ilk hali */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+}
+
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.navbar.scrolled {
+    background-color: #355592;
+}
+
+.fullPage {
+    height: 90vh;
+    background-image: url("img/hero-man.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.cardArea {
+    height: 25vh;
+    background-color: #e4ebf2;
+}
+
+.cardArea .card {
+    margin-top: 3rem;
+    height: 15vh;
+    width: 110vh;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.card .firstText {
+    font-size: xx-large;
+    color: #355592;
+    font-weight: 750;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+
+}
+
+.card .secondText {
+    font-size: xx-large;
+    color: #000000;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.secondPage {
+    height: 100vh;
+
+}
+
+
+/* buttons-yoga/group etc.*/
+.buttons {
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+
+
+.buttons label {
+    /*style the buttons*/
+    position: relative;
+    padding: 10px 20px;
+    background: #355592;
+    color: white;
+    border-radius: 8px;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.buttons {
+    padding: 40px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 15rem;
+    cursor: pointer;
+    /* make clickable*/
+    border-radius: 6px;
+    font-weight: 550;
+    position: relative;
+    transition: 0.3s;
+
+}
+
+.cards .card {
+    /* card unvisibility*/
+    display: none;
+}
+
+/* card visibility*/
+#card1:checked~.cards .c1,
+#card2:checked~.cards .c2,
+#card3:checked~.cards .c3,
+#card4:checked~.cards .c4 {
+    height: 70vh;
+    display: block;
+}
+
+#card1:checked~.buttons label[for="card1"],
+#card2:checked~.buttons label[for="card2"],
+#card3:checked~.buttons label[for="card3"],
+#card4:checked~.buttons label[for="card4"] {
+    background: orange;
+    color: white;
+    box-shadow: 0 0 10px orange;
+}
+
+#card1:checked~.buttons label[for="card1"]::after,
+#card2:checked~.buttons label[for="card2"]::after,
+#card3:checked~.buttons label[for="card3"]::after,
+#card4:checked~.buttons label[for="card4"]::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid orange;
+
+}
+
+.insideCard {
+     width: 100%;
+    height: auto;
+}
+
+
+.secondPage {
+    position: relative;
+    height: 130vh;
+    /*locate ::before according to  this page*/
+    background-color: #ffffff;
+    overflow: hidden;
+    /*skewX() ile eğilen şeklin taşan kısımlarını gizler*/
+}
+
+/*Absolute bir şey kullanıyorsan, parent relative olmalı.*/
+
+.secondPage::before {
+    /*locate according to div not the page*/
+    content: "";
+    /*imaginary block- before kullaniliyorsa zorunlu*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 62%;
+    height: 100%;
+    background-color: #f6f6f6;
+    transform: skewX(12deg);
+    /* Gri alanı diyagonal (eğik) yapar*/
+    transform-origin: top left;
+    /*Eğimin hangi noktadan başlayacağını belirler*/
+
+}
+
+.secondPage>* {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+/*Texts in the cards*/
+
+.cards h1 {
+    font-size: 2.5rem;
+    color: #4E4E4E;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.cards h4 {
+    font-size: 1.3rem;
+    color: #4E4E4E;
+}
+
+.cards img {
+    height: 50vh;
+    width: auto;
+    margin-left: 5rem;
+}
+#inputBtn{
+ gap: 2rem;
+}
+
+#inputBtn1{
+    display: flex;
+    flex-direction: row;
+   
+    
+
+}
+
+#inputBtn1 input{
+    width: 10rem;
+    border-radius: 2rem solid ;
+
+}
+
+
+.thirdPage {
+    height: 60vh;
+}
+
+.thirdPage img {
+    height: 40vh;
+    width: auto;
+}
+
+.result h4 {
+    color: #008200;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+
+.triangle {
+    position: absolute;
+    bottom: -30px;
+    /* Resmin altına olan mesafe */
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 35px solid orange;
+    /* ÖNEMLİ: Okun kendi genişliğini dengeler ve dışarı taşmayı önler */
+    transform: translateX(-50%);
+    transition: left 0.5s ease;
+}
+
+.pageFourth {
+    background-color: #F1F8FF;
+    height: 70vh;
+}
+
+.pageFourth h1 {
+    font-size: 2.5rem;
+    color: #355592;
+    font-weight: bold;
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pageFourth p {
+    font-size: 1.2rem;
+    color: #4E4E4E;
+    font-weight: bold;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#trainerImg {
+    display: flex;
+    padding-top: 3rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#trainerImg img {
+    border: 3px solid orange;
+    border-radius: 12px;
+
+}
+
+.trainer-card {
+    position: relative;
+    padding: 10px;
+}
+
+
+.trainer-card::before {
+    /* top bottom blue borders */
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 35%;
+    right: 35%;
+    border-top: 10px solid #344e86;
+    border-bottom: 10px solid #344e86;
+    pointer-events: none;
+}
+
+
+.trainer-card::after {
+    /* Left right blue borders */
+    content: "";
+    /*Create imaginary box*/
+    position: absolute;
+    /*This box should move easily, without connect with the picture.*/
+    left: 0;
+    right: 0;
+    /*sizes should be the same with picture.*/
+    top: 35%;
+    /*from top and bottom, code pressing the imaginar box */
+    /*We only have 30% area for border  */
+    bottom: 35%;
+    border-left: 10px solid #344e86;
+    border-right: 10px solid #344e86;
+    pointer-events: none;
+    /*not clickable and if clicked it will direct to picture.*/
+}
+
+
+
+.fifthPage {
+    height: 80vh;
+    margin: 1rem;
+}
+
+.fifthPage h1 {
+    font-size: 2.5rem;
+    color: #355592;
+    font-weight: bold;
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.fifthPage p {
+    font-size: 1.2rem;
+    color: #4E4E4E;
+    font-weight: bold;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.fifthPage #card {
+    width: 30vh;
+    border-radius: 1rem;
+    box-shadow: 1px 0.5px 15px 2px rgba(0, 0, 0, 0.4);
+}
+
+.sale {
+    text-decoration: line-through;
+}
+
+
+#card img {
+    border-top-left-radius: 1rem;
+    /* Sol üst köşe */
+    border-top-right-radius: 1rem;
+}
+
+.sixthPage {
+    margin-top: 1rem;
+    min-height: 60vh;
+    background-color: #F1F8FF;
+
+}
+
+.sixthPage #underText {
+    font-size: 1.2rem;
+    color: #4E4E4E;
+    font-weight: bold;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviewItem {
+    width: 45%;
+}
+
+.reviewText {
+    margin-top: 1rem;
+    background-color: #355592;
+    color: white;
+    padding: 1.5rem;
+    line-height: 1.6;
+    position: relative;
+}
+
+.reviewText::before {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 30px solid #8096bb;
+    border-left: 55px solid transparent;
+}
+
+/* konuşma balonu oku */
+.reviewText::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    right: 0px;
+    border-width: 30px 55px 0px 0;
+    border-style: solid;
+    border-color: #8096bb transparent transparent transparent;
+}
+
+.seventhPage {
+    padding-top: 2rem;
+
+}
+
+.seventhPage p {
+    font-size: 1.2rem;
+    color: #4E4E4E;
+    font-weight: bold;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seventhPage #text {
+    background-color: #F1F8FF;
+    height: 3rem;
+    padding-left: 0.5rem;
+    border-radius: 0.5rem;
+    width: 50vh;
+
+}
+
+.seventhPage #message {
+    background-color: #F1F8FF;
+    height: 10rem;
+    padding: 0.5rem 0 0 0.5rem;
+    border-radius: 0.5rem;
+
+}
+
+footer {
+    height: 35vh;
+}
+
+
+@media (max-width: 576px) {
+    * {
+        max-width: 576px;
+    }
+
+    .navbar #navbarContainer {
+        gap: 3rem;
+        margin-right: auto;
+
+    }
+
+
+    .hamburger {
+        display: block;
+        position: relative;
+        transform: translateY(-25%);
+
+
+    }
+
+    .navLinks {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #111;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 15px 0;
+
+    }
+
+    .navLinks.active {
+        display: flex;
+    }
+
+    .navLinks button {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    #home {
+        margin: 0 2rem 0 2rem;
+    }
+
+
+    #home p {
+        font-size: 0.5rem;
+        padding: 0;
+    }
+
+    #home h3 {
+        font-size: 2rem;
+    }
+
+    #home h4 {
+        font-size: 1.2rem;
+    }
+
+    #home .btn1 {
+        width: 100%;
+        padding-left: 1rem;
+        display: flex;
+        justify-content: flex-start;
+        font-weight: bold;
+    }
+
+    #home #details {
+        border: solid 0.2rem white;
+        margin-top: 0.5rem;
+    }
+
+    .cardArea {
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cardArea .card {
+        margin-top: 1rem;
+        height: 20vh;
+        width: 40vh;
+        text-align: center;
+        background-color: white;
+
+    }
+
+    #classes {
+        height: 230vh;
+    }
+
+    #classes h4 {
+        width: 100%;
+    }
+
+    #classes .buttons {
+        display: grid !important;
+        /* flex yerine grid ile 2 kolon yapıyoruz */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px !important;
+        /* kolonlar arası boşluk */
+        padding: 20px 10px !important;
+    }
+
+
+
+    #classes .buttons label {
+        width: 100%;
+        /* butonlar eşit genişlikte */
+        text-align: center;
+        font-size: large;
+        /* küçük ekran için biraz küçültülebilir */
+        padding: 10px;
+    }
+
+    .insideCard {
+        flex-direction: column !important;
+        /* yazı üstte, resim altta */
+        width: 100% !important;
+    }
+
+    .insideCard img {
+        margin: 0rem;
+        padding: 0;
+        margin-top: 15px !important;
+        /* yazının altına boşluk */
+        width: 100% !important;
+
+        /* resim tam genişlik */
+        height: auto !important;
+        order: 1;
+        /* resim her zaman en alta gelsin */
+    }
+
+    .insideCard>div {
+        order: 0;
+        /* yazılar üstte */
+    }
+
+    .thirdPage {
+        height: 75vh;
+        flex-direction: column !important;
+        
+    }
+
+    #ibmCalc {
+        flex-direction: column;
+        /* tüm içerik alt alta gelsin */
+    }
+
+     #ibmCalc h1{
+        flex-direction: column;
+        font-size: 3.2rem;
+
+       
+    }
+
+    /* Resmi içeren div en alta gelsin */
+    #ibmCalc>div:last-child {
+        order: 2;
+        margin-top: 1rem;
+        /* resim ile üstteki içerik arasında boşluk */
+    }
+
+    /* Sol taraf (başlık + inputlar) üstte kalsın */
+    #ibmCalc>div:first-child {
+        order: 1;
+    }
+
+    #inputBtn1 input{
+        width: 100%;
+    }
+
+    #resultNumber,
+    #resultReview {
+        display: none;
+    }
+
+    #bmiPicture {
+        width: 100%;
+        height: auto;
+    }
+
+    #trainers {
+        height: 320vh;
+        padding-top: 25rem;
+    }
+
+    #trainerImg {
+        flex-direction: column;
+        /* alt alta gelsin */
+        gap: 10px;
+        /* resimler arası boşluk */
+    }
+
+    /* her trainer-card tam genişlik olsun */
+    #trainerImg .trainer-card {
+        width: 100%;
+    }
+
+    /* resimler responsive */
+    #trainerImg .trainer-card img {
+        width: 600%;
+        height: auto;
+        display: block;
+    }
+
+    .fifthPage {
+        padding-top: 20rem;
+        height: auto;
+    }
+
+    .extCard {
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #card {
+        
+    }
+
+    #review h1{
+        font-size: 2.7rem;
+    }
+
+    .reviewCard {
+        flex-direction: column;
+        /* alt alta gelsin */
+        gap: 40px;
+        /* resimler arası boşluk */
+    }
+
+    .reviewItem {
+        width: auto;
+    }
+
+    #contact{
+        margin-top: 2rem;
+    }
+
+    #titlePart p {
+        font-size: large;
+    }
+
+    #titlePart h1 {
+        font-size: 2.7rem;
+    }
+
+
+    #infoPart {
+        flex-direction: column;
+    }
+
+    #contactInfo h1 {
+        font-size: large;
+    }
+
+    #map iframe {
+        width: 400px !important;
+        margin-top: 2rem;
+    }
+
+    footer {
+        height: auto;
+        padding: 2rem;
+    }
+
+    footer h4 {
+        font-size: 1rem !important;
+    }
+
+    footer h1 {
+        font-size: 1rem !important;
+    }
+
+    #ftrInfo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
