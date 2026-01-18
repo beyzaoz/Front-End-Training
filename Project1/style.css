@@ -25,7 +25,7 @@ body {}
 }
 
 .fullPage {
-    height: 90vh;
+    height: 130vh;
     background-image: url("img/hero-man.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -35,13 +35,13 @@ body {}
 }
 
 .cardArea {
-    height: 25vh;
+    height: 30vh;
     background-color: #e4ebf2;
 }
 
 .cardArea .card {
     margin-top: 3rem;
-    height: 15vh;
+    height: 20vh;
     width: 110vh;
     justify-content: center;
     align-items: center;
@@ -49,7 +49,7 @@ body {}
 }
 
 .card .firstText {
-    font-size: xx-large;
+    font-size: x-large;
     color: #355592;
     font-weight: 750;
     display: flex;
@@ -60,7 +60,7 @@ body {}
 }
 
 .card .secondText {
-    font-size: xx-large;
+    font-size: x-large;
     color: #000000;
     font-weight: 700;
     display: flex;
@@ -158,7 +158,7 @@ body {}
 
 .secondPage {
     position: relative;
-    height: 130vh;
+    height: 160vh;
     /*locate ::before according to  this page*/
     background-color: #ffffff;
     overflow: hidden;
@@ -230,7 +230,7 @@ body {}
 
 
 .thirdPage {
-    height: 60vh;
+    height: 85vh;
 }
 
 .thirdPage img {
@@ -261,7 +261,7 @@ body {}
 
 .pageFourth {
     background-color: #F1F8FF;
-    height: 70vh;
+    height: 105vh;
 }
 
 .pageFourth h1 {
@@ -342,7 +342,7 @@ body {}
 
 
 .fifthPage {
-    height: 80vh;
+    height: 120vh;
     margin: 1rem;
 }
 
@@ -388,7 +388,7 @@ body {}
 
 .sixthPage {
     margin-top: 1rem;
-    min-height: 60vh;
+    min-height: 80vh;
     background-color: #F1F8FF;
 
 }
@@ -471,7 +471,7 @@ body {}
 }
 
 footer {
-    height: 35vh;
+    height: 65vh;
 }
 
 
